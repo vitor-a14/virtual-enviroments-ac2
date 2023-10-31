@@ -24,7 +24,7 @@ public class TeleportHandler : MonoBehaviour
     {
         teleporting = true;
         currentTeleport += 1;
-        if (currentTeleport > teleports.Count) currentTeleport = 0;
+        if (currentTeleport > teleports.Count - 1) currentTeleport = 0;
 
         yield return new WaitForSeconds(1);
 
